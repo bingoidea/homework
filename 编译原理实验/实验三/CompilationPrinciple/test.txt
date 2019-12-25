@@ -1,0 +1,26 @@
+
+TINY COMPILATION: DoWhileSample.tiny
+
+Syntax tree:
+
+  Read: x
+  If
+    Op: <
+      Const: 0
+      Id: x
+    Assign to: fact
+      Const: 1
+    Do While
+      Assign to: fact
+        Op: *
+          Id: fact
+          Id: x
+      Assign to: x
+        Op: -
+          Id: x
+          Const: 1
+      Op: <
+        Const: 0
+        Id: x
+    Write
+      Id: fact

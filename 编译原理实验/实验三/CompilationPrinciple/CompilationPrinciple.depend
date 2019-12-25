@@ -1,0 +1,65 @@
+# depslib dependency file v1.0
+1576930391 source:e:\codeblocks\compilationprinciple\main.c
+
+1577273597 source:e:\codeblocks\compilationprinciple\parse.c
+	"globals.h"
+	"util.h"
+	"scan.h"
+	"parse.h"
+
+1577179297 e:\codeblocks\compilationprinciple\globals.h
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+
+1576673958 e:\codeblocks\compilationprinciple\util.h
+
+1577273663 e:\codeblocks\compilationprinciple\scan.h
+
+1576673508 e:\codeblocks\compilationprinciple\parse.h
+
+1577273739 source:e:\codeblocks\compilationprinciple\scan.c
+	"globals.h"
+	"util.h"
+	"scan.h"
+
+1577179297 source:e:\codeblocks\compilationprinciple\util.c
+	"globals.h"
+	"util.h"
+
+1576755933 source:e:\codeblocks\compilationprinciple\analyze.c
+	"globals.h"
+	"symtab.h"
+	"analyze.h"
+
+1576755936 e:\codeblocks\compilationprinciple\symtab.h
+
+1576755929 e:\codeblocks\compilationprinciple\analyze.h
+
+1576755931 source:e:\codeblocks\compilationprinciple\cgen.c
+	"globals.h"
+	"symtab.h"
+	"code.h"
+	"cgen.h"
+
+1576756024 e:\codeblocks\compilationprinciple\code.h
+
+1576755938 e:\codeblocks\compilationprinciple\cgen.h
+
+1576756018 source:e:\codeblocks\compilationprinciple\code.c
+	"globals.h"
+	"code.h"
+
+1576755937 source:e:\codeblocks\compilationprinciple\symtab.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"symtab.h"
+
+1577176683 source:e:\codeblocks\compilationprinciple\tinysyntaxtree.c
+	"globals.h"
+	"util.h"
+	"scan.h"
+	"parse.h"
+

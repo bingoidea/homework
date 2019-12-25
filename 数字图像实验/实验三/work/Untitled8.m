@@ -1,0 +1,12 @@
+F = imread('t3.jpg');
+f1 = imadjust(F, [], [], 0.6);
+f2 = imadjust(F, [], [], 0.4);
+f3 = imadjust(F, [], [], 0.3);
+subplot(2,4,1);imshow(F);
+subplot(2,4,2);imhist(F);
+subplot(2,4,3);imshow(f1);
+subplot(2,4,4);imhist(f1);
+subplot(2,4,5);imshow(f2);
+subplot(2,4,6);imhist(f2);
+subplot(2,4,7);imshow(f3);
+subplot(2,4,8);imhist(f3);

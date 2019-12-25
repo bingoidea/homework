@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1577064743 source:e:\codeblocks\compilationprinciplecpp\analyze.cpp
+	"globals.h"
+	"symtab.h"
+	"analyze.h"
+
+1577274278 e:\codeblocks\compilationprinciplecpp\globals.h
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+
+1577064641 e:\codeblocks\compilationprinciplecpp\symtab.h
+
+1577064729 e:\codeblocks\compilationprinciplecpp\analyze.h
+
+1577064552 source:e:\codeblocks\compilationprinciplecpp\code.cpp
+	"globals.h"
+	"code.h"
+
+1577064545 e:\codeblocks\compilationprinciplecpp\code.h
+
+1577064481 source:e:\codeblocks\compilationprinciplecpp\main.cpp
+	"globals.h"
+	"util.h"
+	"scan.h"
+	"parse.h"
+
+1577064920 e:\codeblocks\compilationprinciplecpp\util.h
+
+1577274108 e:\codeblocks\compilationprinciplecpp\scan.h
+
+1577064798 e:\codeblocks\compilationprinciplecpp\parse.h
+
+1577274108 source:e:\codeblocks\compilationprinciplecpp\parse.cpp
+	"globals.h"
+	"util.h"
+	"scan.h"
+	"parse.h"
+
+1577274184 source:e:\codeblocks\compilationprinciplecpp\scan.cpp
+	"globals.h"
+	"util.h"
+	"scan.h"
+
+1577064655 source:e:\codeblocks\compilationprinciplecpp\symtab.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"symtab.h"
+
+1577274108 source:e:\codeblocks\compilationprinciplecpp\util.cpp
+	"globals.h"
+	"util.h"
+
+1577064978 source:e:\codeblocks\compilationprinciplecpp\cgen.cpp
+	"globals.h"
+	"symtab.h"
+	"code.h"
+	"cgen.h"
+
+1577064478 e:\codeblocks\compilationprinciplecpp\cgen.h
+

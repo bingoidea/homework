@@ -1,0 +1,69 @@
+I1=zeros(256);
+for i=112:144
+    for j=64:192
+        I1(j,i)=100;
+    end
+end
+I2=zeros(256);
+for i=112:144
+    for j=64:192
+        I2(j,i)=(-1).^(i+j)*I1(j,i);
+    end
+end
+%1,2
+figure;
+subplot(221);
+imshow(I1);
+title('原图像f1');
+subplot(222);
+imshow(abs(fft2(histeq(I1))));
+title('原图像的幅度谱');
+subplot(223);
+imshow(I2);
+title('中心化后图像f2');
+subplot(224);
+imshow(abs(fft2(histeq(I2))));
+title('中心化后图像f2的幅度谱');
+%3
+I3=imrotate(I2,90,'bilinear');
+figure;
+subplot(131);
+imshow(I2);
+title('中心化后图像f2');
+subplot(132);
+imshow(abs(fft2(histeq(I2))));
+title('中心化后图像f2的幅度谱');
+subplot(133);
+imshow(abs(fft2(histeq(I3))));
+title('旋转后图像f3的幅度谱');
+%4
+I4=imrotate(I1,90,'bilinear');
+I5=I4+I1;
+figure;
+subplot(221);
+imshow(I1);
+title('原图像f1');
+subplot(222);
+imshow(abs(fft2(histeq(I5))));
+title('相加后图像f5幅度谱');
+subplot(223);
+imshow(abs(fft2(histeq(I1))));
+title('原图像的幅度谱');
+subplot(224);
+imshow(abs(fft2(histeq(I4))));
+title('旋转后图像f4的幅度谱');
+%5
+I6=I2+I3;
+figure;
+subplot(221);
+imshow(abs(fft2(histeq(I6))));
+title('相加后图像f6幅度谱');
+subplot(222);
+imshow(abs(fft2(histeq(I5))));
+title('相加后图像f5的幅度谱');
+subplot(223);
+imshow(abs(fft2(histeq(I2))));
+title('中心化后图像f2的幅度谱');
+subplot(224);
+imshow(abs(fft2(histeq(I3))));
+title('旋转后图像f3幅度谱');

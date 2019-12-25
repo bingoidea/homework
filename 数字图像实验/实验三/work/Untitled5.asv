@@ -1,0 +1,22 @@
+F = imread('t2.jpg');
+img = F;
+a1 = 1/3;
+a2 = 3;
+a3 = a1;
+b2 = -1/9;
+b3 = 16/3;
+[n, m] = size(F);
+for i = 1 : n
+    for j = 1 : m
+        if(F(i,j)>=0 & F(i,j)<=round(3/8*255))
+            F(i,j) = round(F(i,j) * a1);
+        else if(F(i,j)<=round(5/8*255))
+            F(i,j) = round(F(i,j) * a2 + b2);
+        
+        end
+    end
+end
+subplot(2,2,1);imshow(img);
+subplot(2,2,2);imshow(F);
+subplot(2,2,3);imhist(img);
+subplot(2,2,4);imhist(F);
