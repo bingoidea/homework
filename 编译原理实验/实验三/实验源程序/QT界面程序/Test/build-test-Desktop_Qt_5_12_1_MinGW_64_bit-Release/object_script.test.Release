@@ -1,0 +1,12 @@
+release/main.o
+release/mainwindow.o
+release/analyze.o
+release/cgen.o
+release/code.o
+release/parse.o
+release/scan.o
+release/util.o
+release/symtab.o
+release/tinysyntaxtree.o
+release/qrc_res.o
+release/moc_mainwindow.o

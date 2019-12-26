@@ -1,0 +1,19 @@
+
+TINY COMPILATION: E:/QTproject/Test/test/example/treeForSample.tiny
+
+Syntax tree:
+
+  Read: x
+  If
+    Op: <
+      Const: 0
+      Id: x
+    For
+      Id: x
+      Const: 1
+      Assign to: fact
+        Op: *
+          Id: fact
+          Id: x
+    Write
+      Id: fact

@@ -1,0 +1,12 @@
+debug/main.o
+debug/mainwindow.o
+debug/analyze.o
+debug/cgen.o
+debug/code.o
+debug/parse.o
+debug/scan.o
+debug/util.o
+debug/symtab.o
+debug/tinysyntaxtree.o
+debug/qrc_res.o
+debug/moc_mainwindow.o

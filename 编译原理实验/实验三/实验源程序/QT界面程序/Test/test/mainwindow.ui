@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile_F">
+    <property name="title">
+     <string>File (F)</string>
+    </property>
+    <addaction name="actionopen_O"/>
+    <addaction name="actionsave_S"/>
+    <addaction name="actionsave_as_A"/>
+    <addaction name="actionclose_C"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit_E">
+    <property name="title">
+     <string>Edit (E)</string>
+    </property>
+    <addaction name="actionTinySyntaxTree"/>
+    <addaction name="actionload_tree"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp_H">
+    <property name="title">
+     <string>Help (H)</string>
+    </property>
+    <addaction name="actionabout"/>
+   </widget>
+   <addaction name="menuFile_F"/>
+   <addaction name="menuEdit_E"/>
+   <addaction name="menuHelp_H"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionopen_O"/>
+   <addaction name="actionsave_S"/>
+   <addaction name="actionsave_as_A"/>
+   <addaction name="separator"/>
+   <addaction name="actionTinySyntaxTree"/>
+   <addaction name="actionload_tree"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionopen_O">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myicons/icons/open.png</normaloff>:/myicons/icons/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>open (O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionsave_S">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myicons/icons/save.png</normaloff>:/myicons/icons/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>save (S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionsave_as_A">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myicons/icons/saveas.png</normaloff>:/myicons/icons/saveas.png</iconset>
+   </property>
+   <property name="text">
+    <string>save as (A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionclose_C">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myicons/icons/close.png</normaloff>:/myicons/icons/close.png</iconset>
+   </property>
+   <property name="text">
+    <string>close (C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionabout">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myicons/icons/about.png</normaloff>:/myicons/icons/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>about...</string>
+   </property>
+  </action>
+  <action name="actionundo">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myicons/icons/undo.png</normaloff>:/myicons/icons/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>undo (U)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionredo_R">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myicons/icons/redo.png</normaloff>:/myicons/icons/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>redo (R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Z</string>
+   </property>
+  </action>
+  <action name="actioncut_X">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myicons/icons/cut.png</normaloff>:/myicons/icons/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>cut (X)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actioncopy_C">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myicons/icons/copy.png</normaloff>:/myicons/icons/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>copy (C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionpaste_V">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myicons/icons/paste.png</normaloff>:/myicons/icons/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>paste (V)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionselect_all_A">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myicons/icons/selectall.png</normaloff>:/myicons/icons/selectall.png</iconset>
+   </property>
+   <property name="text">
+    <string>select all (A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionTinySyntaxTree">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myicons/icons/tree.png</normaloff>:/myicons/icons/tree.png</iconset>
+   </property>
+   <property name="text">
+    <string>TinySyntaxTree</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F5</string>
+   </property>
+  </action>
+  <action name="actionload_tree">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myicons/icons/load.png</normaloff>:/myicons/icons/load.png</iconset>
+   </property>
+   <property name="text">
+    <string>load tree</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
