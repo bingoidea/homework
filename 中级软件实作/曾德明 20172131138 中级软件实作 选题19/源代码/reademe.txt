@@ -1,0 +1,2 @@
+anaconda3+python3.7.4+MySQL5.7
+项目使用的测试数据库用test.sql生成
