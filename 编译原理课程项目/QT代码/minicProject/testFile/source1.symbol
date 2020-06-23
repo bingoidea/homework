@@ -1,0 +1,29 @@
+
+MINI-C SYMBOL TAB: E:/QTproject/minicProject/testFile/source1.symbol
+
+
+Building Symbol Table...
+
+Symbol table:
+
+Scope Variable Name  Location   Line Numbers
+----- -------------  --------   ------------
+0      main           -1          14 
+0      input          -1          17   18 
+0      output         -1          19 
+0      gcd            -1           6   10   19 
+
+Scope Variable Name  Location   Line Numbers
+----- -------------  --------   ------------
+1      u              0            6 
+1      v              1            6 
+
+Scope Variable Name  Location   Line Numbers
+----- -------------  --------   ------------
+2      x              0           15 
+2      y              1           16 
+
+
+Checking Types...
+
+Type Checking Finished

@@ -1,0 +1,131 @@
+
+MINI-C COMPILATION: E:/QTproject/minicProject/testFile/source1.tree
+
+   1: /*
+   2: A program to perform Euclid's
+   3: algorithm to compute gcd.
+   4: */
+   5: 
+   6: int gcd(int u, int v){
+	6: reserved word: int
+	6: ID, name= gcd
+	6: (
+	6: reserved word: int
+	6: ID, name= u
+	6: ,
+	6: reserved word: int
+	6: ID, name= v
+	6: )
+	6: {
+   7: if(v == 0)
+	7: reserved word: if
+	7: (
+	7: ID, name= v
+	7: ==
+	7: NUM, val= 0
+	7: )
+   8: return u;
+	8: reserved word: return
+	8: ID, name= u
+	8: ;
+   9: else
+	9: reserved word: else
+  10: return gcd(v, u-u/v*v);
+	10: reserved word: return
+	10: ID, name= gcd
+	10: (
+	10: ID, name= v
+	10: ,
+	10: ID, name= u
+	10: -
+	10: ID, name= u
+	10: /
+	10: ID, name= v
+	10: *
+	10: ID, name= v
+	10: )
+	10: ;
+  11: /* u-u/v*v == u mod v */
+  12: }
+	12: }
+  13: 
+  14: void main(void){
+	14: reserved word: void
+	14: ID, name= main
+	14: (
+	14: reserved word: void
+	14: )
+	14: {
+  15: int x;
+	15: reserved word: int
+	15: ID, name= x
+	15: ;
+  16: int y;
+	16: reserved word: int
+	16: ID, name= y
+	16: ;
+  17: x = input();
+	17: ID, name= x
+	17: =
+	17: ID, name= input
+	17: (
+	17: )
+	17: ;
+  18: y = input();
+	18: ID, name= y
+	18: =
+	18: ID, name= input
+	18: (
+	18: )
+	18: ;
+  19: output(gcd(x,y));
+	19: ID, name= output
+	19: (
+	19: ID, name= gcd
+	19: (
+	19: ID, name= x
+	19: ,
+	19: ID, name= y
+	19: )
+	19: )
+	19: ;
+  20: }	20: }
+	21: EOF
+
+
+Syntax tree:
+
+  [Function declaration "gcd()" of return type "Integer"]
+    [Variable declaration "u" of type "Integer"]
+    [Variable declaration "v" of type "Integer"]
+    [Compound statement]
+      [IF statement]
+        [Operator "==
+          [Identifier "v[119]"]
+          [Literal constant "0"]
+        [RETURN statement]
+          [Identifier "u[10]"]
+        [RETURN statement]
+          [Call to function "gcd() 2"]
+            [Identifier "v[119]"]
+            [Operator "-
+              [Identifier "u[119]"]
+              [Operator "*
+                [Operator "/
+                  [Identifier "u[6]"]
+                  [Identifier "v[9]"]
+                [Identifier "v[-1]"]
+  [Function declaration "main()" of return type "Void"]
+    [Compound statement]
+      [Variable declaration "x" of type "Integer"]
+      [Variable declaration "y" of type "Integer"]
+      [Assignment]
+        [Identifier "x[8]"]
+        [Call to function "input() 0"]
+      [Assignment]
+        [Identifier "y[7274598]"]
+        [Call to function "input() 0"]
+      [Call to function "output() 1"]
+        [Call to function "gcd() 2"]
+          [Identifier "x"]
+          [Identifier "y"]

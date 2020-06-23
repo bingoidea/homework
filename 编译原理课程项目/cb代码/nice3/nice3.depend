@@ -1,0 +1,132 @@
+# depslib dependency file v1.0
+1592231016 source:e:\大三下\编译原理作业\c--compiler-master\nice3\main.c
+	"globals.h"
+	"util.h"
+	"scan.h"
+	"parse.h"
+	"analyze.h"
+	"cgen.h"
+
+1514500972 e:\大三下\编译原理作业\c--compiler-master\nice3\globals.h
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+
+1514500972 e:\大三下\编译原理作业\c--compiler-master\nice3\util.h
+
+1514500972 e:\大三下\编译原理作业\c--compiler-master\nice3\scan.h
+
+1514500972 e:\大三下\编译原理作业\c--compiler-master\nice3\parse.h
+
+1514500972 e:\大三下\编译原理作业\c--compiler-master\nice3\analyze.h
+
+1514500972 e:\大三下\编译原理作业\c--compiler-master\nice3\cgen.h
+
+1592230340 source:e:\大三下\编译原理作业\c--compiler-master\nice3\analyze.c
+	"globals.h"
+	"symtab.h"
+	"analyze.h"
+
+1514500972 e:\大三下\编译原理作业\c--compiler-master\nice3\symtab.h
+
+1592230340 source:e:\大三下\编译原理作业\c--compiler-master\nice3\cgen.c
+	"globals.h"
+	"symtab.h"
+	"code.h"
+	"cgen.h"
+
+1514500972 e:\大三下\编译原理作业\c--compiler-master\nice3\code.h
+
+1592230340 source:e:\大三下\编译原理作业\c--compiler-master\nice3\code.c
+	"globals.h"
+	"code.h"
+
+1592230340 source:e:\大三下\编译原理作业\c--compiler-master\nice3\parse.c
+	"globals.h"
+	"util.h"
+	"scan.h"
+	"parse.h"
+
+1592230340 source:e:\大三下\编译原理作业\c--compiler-master\nice3\scan.c
+	"globals.h"
+	"util.h"
+	"scan.h"
+
+1514500972 source:e:\大三下\编译原理作业\c--compiler-master\nice3\symtab.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"symtab.h"
+	"globals.h"
+
+1514500972 source:e:\大三下\编译原理作业\c--compiler-master\nice3\util.c
+	"globals.h"
+	"util.h"
+
+1592380801 source:f:\明个人文件夹\codeblock\nice3\analyze.c
+	"globals.h"
+	"symtab.h"
+	"analyze.h"
+
+1592362608 f:\明个人文件夹\codeblock\nice3\globals.h
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+
+1592377951 f:\明个人文件夹\codeblock\nice3\symtab.h
+
+1592380801 f:\明个人文件夹\codeblock\nice3\analyze.h
+	"symtab.h"
+
+1592300428 source:f:\明个人文件夹\codeblock\nice3\cgen.c
+	"globals.h"
+	"symtab.h"
+	"code.h"
+	"cgen.h"
+
+1514500972 f:\明个人文件夹\codeblock\nice3\code.h
+
+1514500972 f:\明个人文件夹\codeblock\nice3\cgen.h
+
+1592300428 source:f:\明个人文件夹\codeblock\nice3\code.c
+	"globals.h"
+	"code.h"
+
+1592362608 source:f:\明个人文件夹\codeblock\nice3\parse.c
+	"globals.h"
+	"util.h"
+	"scan.h"
+	"parse.h"
+
+1514500972 f:\明个人文件夹\codeblock\nice3\util.h
+
+1592315310 f:\明个人文件夹\codeblock\nice3\scan.h
+
+1514500972 f:\明个人文件夹\codeblock\nice3\parse.h
+
+1592362608 source:f:\明个人文件夹\codeblock\nice3\scan.c
+	"globals.h"
+	"util.h"
+	"scan.h"
+
+1592362608 source:f:\明个人文件夹\codeblock\nice3\symtab.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"symtab.h"
+	"globals.h"
+
+1592362608 source:f:\明个人文件夹\codeblock\nice3\util.c
+	"globals.h"
+	"util.h"
+
+1592383998 source:f:\明个人文件夹\codeblock\nice3\main.c
+	"globals.h"
+	"util.h"
+	"scan.h"
+	"parse.h"
+	"analyze.h"
+	"cgen.h"
+

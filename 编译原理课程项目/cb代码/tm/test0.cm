@@ -1,0 +1,15 @@
+int main(void)
+{
+        int aa;
+        int bb;
+        int cc;
+
+		aa = 3;
+		bb = 2;
+		cc = 1;
+
+        cc = bb+cc*aa/bb-cc;
+		output(cc);
+
+        return 1;
+}

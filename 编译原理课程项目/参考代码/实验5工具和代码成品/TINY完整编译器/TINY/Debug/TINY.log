@@ -1,0 +1,33 @@
+﻿cl : 命令行 warning D9025: 正在重写“/sdl”(用“/GS-”)
+  ANALYZE.C
+  CGEN.C
+e:\编译原理\lib\实验五-201608010216-王柯瑶\tiny\cgen.c(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+e:\编译原理\lib\实验五-201608010216-王柯瑶\tiny\cgen.c(199): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\string.h(90): note: 参见“strcat”的声明
+  CODE.C
+  lex.yy.c
+lex.yy.c(1357): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _fileno. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(2459): note: 参见“fileno”的声明
+TINY.L(68): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\string.h(338): note: 参见“strncpy”的声明
+  MAIN.C
+e:\编译原理\lib\实验五-201608010216-王柯瑶\tiny\main.c(55): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+e:\编译原理\lib\实验五-201608010216-王柯瑶\tiny\main.c(57): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\string.h(90): note: 参见“strcat”的声明
+e:\编译原理\lib\实验五-201608010216-王柯瑶\tiny\main.c(58): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\编译原理\lib\实验五-201608010216-王柯瑶\tiny\main.c(86): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\string.h(338): note: 参见“strncpy”的声明
+e:\编译原理\lib\实验五-201608010216-王柯瑶\tiny\main.c(87): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\string.h(90): note: 参见“strcat”的声明
+e:\编译原理\lib\实验五-201608010216-王柯瑶\tiny\main.c(88): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+  PARSE.C
+  SYMTAB.C
+  UTIL.C
+e:\编译原理\lib\实验五-201608010216-王柯瑶\tiny\util.c(104): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+  正在生成代码...
+  TINY.vcxproj -> E:\编译原理\lib\实验五-201608010216-王柯瑶\TINY\Debug\TINY.exe

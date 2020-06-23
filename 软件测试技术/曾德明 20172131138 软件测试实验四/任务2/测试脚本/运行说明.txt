@@ -1,0 +1,1 @@
+直接用idea运行BMI.java文件，main函数中会自动进行测试

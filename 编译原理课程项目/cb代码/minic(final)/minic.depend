@@ -1,0 +1,163 @@
+# depslib dependency file v1.0
+1513499388 source:f:\明个人文件夹\codeblock\minic\lex.yy.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<io.h>
+	<stdlib.h>
+	"globals.h"
+	"util.h"
+	"scan.h"
+	<stdlib.h>
+
+1592193546 f:\明个人文件夹\codeblock\minic\globals.h
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"tiny.y.tab.h"
+
+1513502522 f:\明个人文件夹\codeblock\minic\tiny.y.tab.h
+
+1513499428 f:\明个人文件夹\codeblock\minic\util.h
+
+1513499716 f:\明个人文件夹\codeblock\minic\scan.h
+
+1591806170 source:f:\明个人文件夹\codeblock\minic\tiny.y.tab.c
+	"globals.h"
+	"util.h"
+	"scan.h"
+	"parse.h"
+	<stdio.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+
+901951304 f:\明个人文件夹\codeblock\minic\parse.h
+
+1592193546 source:f:\明个人文件夹\codeblock\minic\util.c
+	"globals.h"
+	"util.h"
+
+1513499388 source:e:\大三下\编译原理作业\minic-s\minic\lex.yy.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<io.h>
+	<stdlib.h>
+	"globals.h"
+	"util.h"
+	"scan.h"
+	<stdlib.h>
+
+1592193546 e:\大三下\编译原理作业\minic-s\minic\globals.h
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"tiny.y.tab.h"
+
+1513502522 e:\大三下\编译原理作业\minic-s\minic\tiny.y.tab.h
+
+1513499428 e:\大三下\编译原理作业\minic-s\minic\util.h
+
+1513499716 e:\大三下\编译原理作业\minic-s\minic\scan.h
+
+1592200776 source:e:\大三下\编译原理作业\minic-s\minic\main.cpp
+	"globals.h"
+	<iostream>
+	"util.h"
+	"scan.h"
+	"parse.h"
+	"symtab.h"
+
+901951304 e:\大三下\编译原理作业\minic-s\minic\parse.h
+
+1591806170 source:e:\大三下\编译原理作业\minic-s\minic\tiny.y.tab.c
+	"globals.h"
+	"util.h"
+	"scan.h"
+	"parse.h"
+	<stdio.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+
+1592193546 source:e:\大三下\编译原理作业\minic-s\minic\util.c
+	"globals.h"
+	"util.h"
+
+1592211145 source:e:\大三下\编译原理作业\minic-s\minic\symtab.cpp
+	"symtab.h"
+	"globals.h"
+	<vector>
+	<set>
+	<iostream>
+	"util.h"
+
+1592200350 e:\大三下\编译原理作业\minic-s\minic\symtab.h
+	"globals.h"
+	<iostream>
+	<vector>
+
+1513499388 source:f:\明个人文件夹\codeblock\minic(final)\lex.yy.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<io.h>
+	<stdlib.h>
+	"globals.h"
+	"util.h"
+	"scan.h"
+	<stdlib.h>
+
+1592193546 f:\明个人文件夹\codeblock\minic(final)\globals.h
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"tiny.y.tab.h"
+
+1513502522 f:\明个人文件夹\codeblock\minic(final)\tiny.y.tab.h
+
+1513499428 f:\明个人文件夹\codeblock\minic(final)\util.h
+
+1513499716 f:\明个人文件夹\codeblock\minic(final)\scan.h
+
+1592200776 source:f:\明个人文件夹\codeblock\minic(final)\main.cpp
+	"globals.h"
+	<iostream>
+	"util.h"
+	"scan.h"
+	"parse.h"
+	"symtab.h"
+
+901951304 f:\明个人文件夹\codeblock\minic(final)\parse.h
+
+1592200350 f:\明个人文件夹\codeblock\minic(final)\symtab.h
+	"globals.h"
+	<iostream>
+	<vector>
+
+1592211145 source:f:\明个人文件夹\codeblock\minic(final)\symtab.cpp
+	"symtab.h"
+	"globals.h"
+	<vector>
+	<set>
+	<iostream>
+	"util.h"
+
+1591806170 source:f:\明个人文件夹\codeblock\minic(final)\tiny.y.tab.c
+	"globals.h"
+	"util.h"
+	"scan.h"
+	"parse.h"
+	<stdio.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+
+1592193546 source:f:\明个人文件夹\codeblock\minic(final)\util.c
+	"globals.h"
+	"util.h"
+

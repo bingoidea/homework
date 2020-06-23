@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>644</width>
+    <height>436</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color:rgb(170, 0, 0);
+font: 87 9pt &quot;Arial Black&quot;;
+font: 10pt &quot;Arial&quot;;
+font: 9pt &quot;宋体&quot;;
+font: 87 9pt &quot;Arial Black&quot;;
+background-color: rgb(224, 255, 237);
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QTextEdit" name="Write">
+        <property name="styleSheet">
+         <string notr="true">color:rgb(0, 0, 0);
+font: 9pt &quot;Tahoma&quot;;
+background-color: rgb(255, 236, 224);</string>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="Error_display">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(253, 255, 202);
+color: rgb(0, 93, 23);
+
+font: 25 9pt &quot;Bahnschrift Light&quot;;
+</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QTextBrowser" name="Other_display">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(195, 255, 181);
+color:rgb(0, 0, 0);
+font: 25 9pt &quot;Bahnschrift Light&quot;;</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>644</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_N">
+    <property name="title">
+     <string>新建(&amp;N)</string>
+    </property>
+    <addaction name="action_open"/>
+    <addaction name="action_write"/>
+    <addaction name="action_save"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>词法分析(&amp;C)</string>
+    </property>
+    <addaction name="action_source"/>
+    <addaction name="action_cifafenxi"/>
+    <addaction name="action_char"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>语义分析(&amp;Y)</string>
+    </property>
+    <addaction name="action_yuyi"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>汇编代码(H)</string>
+    </property>
+    <addaction name="action_centralcode"/>
+    <addaction name="action_huibiandaima"/>
+    <addaction name="action_all"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>关于我们(&amp;A)</string>
+    </property>
+    <addaction name="action_BY_4"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>其他(&amp;R)</string>
+    </property>
+    <addaction name="action_sweep"/>
+    <addaction name="action_reboot"/>
+   </widget>
+   <addaction name="menu_N"/>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_6"/>
+  </widget>
+  <action name="action_open">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="action_write">
+   <property name="text">
+    <string>写入</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="text">
+    <string>另存为</string>
+   </property>
+  </action>
+  <action name="action_BY_4">
+   <property name="text">
+    <string>BY_4</string>
+   </property>
+  </action>
+  <action name="action_cifafenxi">
+   <property name="text">
+    <string>词法记号</string>
+   </property>
+  </action>
+  <action name="action_source">
+   <property name="text">
+    <string>源文件</string>
+   </property>
+  </action>
+  <action name="action_yufafenxi">
+   <property name="text">
+    <string>执行</string>
+   </property>
+  </action>
+  <action name="action_tree">
+   <property name="text">
+    <string>语法分析树</string>
+   </property>
+  </action>
+  <action name="action_yuyi">
+   <property name="text">
+    <string>执行</string>
+   </property>
+  </action>
+  <action name="action_huibiandaima">
+   <property name="text">
+    <string>汇编代码</string>
+   </property>
+  </action>
+  <action name="action_reboot">
+   <property name="text">
+    <string>重启程序</string>
+   </property>
+  </action>
+  <action name="action_all">
+   <property name="text">
+    <string>一步到底</string>
+   </property>
+  </action>
+  <action name="action_sweep">
+   <property name="text">
+    <string>清屏</string>
+   </property>
+  </action>
+  <action name="action_autorun">
+   <property name="text">
+    <string>自启动</string>
+   </property>
+  </action>
+  <action name="action_centralcode">
+   <property name="text">
+    <string>中间代码</string>
+   </property>
+  </action>
+  <action name="action_yhh_centralcode">
+   <property name="text">
+    <string>优化后的中间代码</string>
+   </property>
+  </action>
+  <action name="action_char">
+   <property name="text">
+    <string>显示字符</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

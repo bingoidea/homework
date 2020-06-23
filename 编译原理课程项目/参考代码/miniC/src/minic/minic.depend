@@ -1,0 +1,409 @@
+# depslib dependency file v1.0
+1526735093 source:d:\test\minic\alloc.cpp
+	"alloc.h"
+	"intercode.h"
+	"livevar.h"
+	<algorithm>
+	"symbol.h"
+	"platform.h"
+
+1526735111 d:\test\minic\alloc.h
+	"common.h"
+	"set.h"
+
+1526735135 d:\test\minic\common.h
+	<stdio.h>
+	<vector>
+	<list>
+	<string>
+
+1526738152 d:\test\minic\set.h
+	"common.h"
+
+1526735326 d:\test\minic\intercode.h
+	"common.h"
+	"set.h"
+
+1526735366 d:\test\minic\livevar.h
+	"common.h"
+	"set.h"
+
+1526738176 d:\test\minic\symbol.h
+	"common.h"
+	"intercode.h"
+	"set.h"
+
+1526896656 d:\test\minic\platform.h
+	"common.h"
+
+1526734808 source:d:\test\minic\bin\debug\test.c
+
+1526916986 source:d:\test\minic\compiler.cpp
+	"compiler.h"
+	"lexer.h"
+	"error.h"
+	"symtab.h"
+	"genir.h"
+	"parser.h"
+
+1526909326 d:\test\minic\compiler.h
+	"common.h"
+
+1526735346 d:\test\minic\lexer.h
+	"common.h"
+	<ext/hash_map>
+
+1526735258 d:\test\minic\error.h
+	"common.h"
+
+1526738195 d:\test\minic\symtab.h
+	"common.h"
+	<ext/hash_map>
+
+1526735280 d:\test\minic\genir.h
+	"common.h"
+
+1526738009 d:\test\minic\parser.h
+	"common.h"
+
+1526735183 source:d:\test\minic\constprop.cpp
+	"constprop.h"
+	"dfg.h"
+	"symbol.h"
+	"token.h"
+	"symtab.h"
+
+1526735193 d:\test\minic\constprop.h
+	"common.h"
+
+1526735238 d:\test\minic\dfg.h
+	"common.h"
+	"set.h"
+
+1526738223 d:\test\minic\token.h
+	"common.h"
+
+1526735204 source:d:\test\minic\copyprop.cpp
+	"copyprop.h"
+	"dfg.h"
+	"intercode.h"
+
+1526735215 d:\test\minic\copyprop.h
+	"common.h"
+	"set.h"
+
+1526735226 source:d:\test\minic\dfg.cpp
+	"dfg.h"
+	"intercode.h"
+	"constprop.h"
+
+1526735248 source:d:\test\minic\error.cpp
+	"error.h"
+	"token.h"
+	"lexer.h"
+
+1526735270 source:d:\test\minic\genir.cpp
+	"genir.h"
+	<sstream>
+	"symbol.h"
+	"symtab.h"
+	"error.h"
+
+1526897150 source:d:\test\minic\iloc.cpp
+	"iloc.h"
+	"platform.h"
+	"symbol.h"
+	<sstream>
+
+1526896656 d:\test\minic\iloc.h
+	"common.h"
+	"set.h"
+
+1526735316 source:d:\test\minic\intercode.cpp
+	"intercode.h"
+	"symbol.h"
+	"genir.h"
+	"platform.h"
+
+1526916178 source:d:\test\minic\lexer.cpp
+	"lexer.h"
+	"token.h"
+	"error.h"
+	"compiler.h"
+
+1526735357 source:d:\test\minic\livevar.cpp
+	"livevar.h"
+	"dfg.h"
+	"intercode.h"
+	"symbol.h"
+	"symtab.h"
+
+1526909326 source:d:\test\minic\main.cpp
+	"compiler.h"
+	"error.h"
+	<iostream>
+	<cstring>
+
+1526914893 source:d:\test\minic\parser.cpp
+	"parser.h"
+	"token.h"
+	"lexer.h"
+	"symbol.h"
+	"symtab.h"
+	"genir.h"
+	"error.h"
+	"compiler.h"
+
+1526896656 source:d:\test\minic\peephole.cpp
+	"peephole.h"
+	"platform.h"
+
+1526896656 d:\test\minic\peephole.h
+	"common.h"
+	"iloc.h"
+
+1526738045 source:d:\test\minic\platform.cpp
+	"platform.h"
+
+1526738096 source:d:\test\minic\redundelim.cpp
+	<algorithm>
+	"redundelim.h"
+	"dfg.h"
+	"intercode.h"
+	"symbol.h"
+	"symtab.h"
+
+1526917412 d:\test\minic\redundelim.h
+	"common.h"
+	"set.h"
+
+1526899981 source:d:\test\minic\selector.cpp
+	"selector.h"
+	"intercode.h"
+	"symbol.h"
+	"platform.h"
+
+1526738136 d:\test\minic\selector.h
+	"common.h"
+	"iloc.h"
+
+1526738145 source:d:\test\minic\set.cpp
+	"set.h"
+
+1526917280 source:d:\test\minic\symbol.cpp
+	"symbol.h"
+	"error.h"
+	"token.h"
+	"genir.h"
+	"symtab.h"
+	"compiler.h"
+	"dfg.h"
+	"constprop.h"
+	"redundelim.h"
+	"copyprop.h"
+	"livevar.h"
+	"alloc.h"
+	"selector.h"
+	"platform.h"
+	"peephole.h"
+
+1526917043 source:d:\test\minic\symtab.cpp
+	"symtab.h"
+	"error.h"
+	"symbol.h"
+	"genir.h"
+	"compiler.h"
+
+1526915353 source:d:\test\minic\token.cpp
+	"token.h"
+	<sstream>
+	"error.h"
+
+1526735093 source:c:\users\志超\desktop\minic\minic\alloc.cpp
+	"alloc.h"
+	"intercode.h"
+	"livevar.h"
+	<algorithm>
+	"symbol.h"
+	"platform.h"
+
+1526735111 c:\users\志超\desktop\minic\minic\alloc.h
+	"common.h"
+	"set.h"
+
+1526735135 c:\users\志超\desktop\minic\minic\common.h
+	<stdio.h>
+	<vector>
+	<list>
+	<string>
+
+1526738152 c:\users\志超\desktop\minic\minic\set.h
+	"common.h"
+
+1526735326 c:\users\志超\desktop\minic\minic\intercode.h
+	"common.h"
+	"set.h"
+
+1526735366 c:\users\志超\desktop\minic\minic\livevar.h
+	"common.h"
+	"set.h"
+
+1526738176 c:\users\志超\desktop\minic\minic\symbol.h
+	"common.h"
+	"intercode.h"
+	"set.h"
+
+1526896656 c:\users\志超\desktop\minic\minic\platform.h
+	"common.h"
+
+1526735226 source:c:\users\志超\desktop\minic\minic\dfg.cpp
+	"dfg.h"
+	"intercode.h"
+	"constprop.h"
+
+1526735238 c:\users\志超\desktop\minic\minic\dfg.h
+	"common.h"
+	"set.h"
+
+1526735248 source:c:\users\志超\desktop\minic\minic\error.cpp
+	"error.h"
+	"token.h"
+	"lexer.h"
+
+1526735258 c:\users\志超\desktop\minic\minic\error.h
+	"common.h"
+
+1526738223 c:\users\志超\desktop\minic\minic\token.h
+	"common.h"
+
+1526735346 c:\users\志超\desktop\minic\minic\lexer.h
+	"common.h"
+	<ext/hash_map>
+
+1526735270 source:c:\users\志超\desktop\minic\minic\genir.cpp
+	"genir.h"
+	<sstream>
+	"symbol.h"
+	"symtab.h"
+	"error.h"
+
+1526735280 c:\users\志超\desktop\minic\minic\genir.h
+	"common.h"
+
+1526738195 c:\users\志超\desktop\minic\minic\symtab.h
+	"common.h"
+	<ext/hash_map>
+
+1526897150 source:c:\users\志超\desktop\minic\minic\iloc.cpp
+	"iloc.h"
+	"platform.h"
+	"symbol.h"
+	<sstream>
+
+1526896656 c:\users\志超\desktop\minic\minic\iloc.h
+	"common.h"
+	"set.h"
+
+1526735316 source:c:\users\志超\desktop\minic\minic\intercode.cpp
+	"intercode.h"
+	"symbol.h"
+	"genir.h"
+	"platform.h"
+
+1526916178 source:c:\users\志超\desktop\minic\minic\lexer.cpp
+	"lexer.h"
+	"token.h"
+	"error.h"
+	"compiler.h"
+
+1526909326 c:\users\志超\desktop\minic\minic\compiler.h
+	"common.h"
+
+1526735357 source:c:\users\志超\desktop\minic\minic\livevar.cpp
+	"livevar.h"
+	"dfg.h"
+	"intercode.h"
+	"symbol.h"
+	"symtab.h"
+
+1526909326 source:c:\users\志超\desktop\minic\minic\main.cpp
+	"compiler.h"
+	"error.h"
+	<iostream>
+	<cstring>
+
+1526914893 source:c:\users\志超\desktop\minic\minic\parser.cpp
+	"parser.h"
+	"token.h"
+	"lexer.h"
+	"symbol.h"
+	"symtab.h"
+	"genir.h"
+	"error.h"
+	"compiler.h"
+
+1526738009 c:\users\志超\desktop\minic\minic\parser.h
+	"common.h"
+
+1526738045 source:c:\users\志超\desktop\minic\minic\platform.cpp
+	"platform.h"
+
+1526738096 source:c:\users\志超\desktop\minic\minic\redundelim.cpp
+	<algorithm>
+	"redundelim.h"
+	"dfg.h"
+	"intercode.h"
+	"symbol.h"
+	"symtab.h"
+
+1526917412 c:\users\志超\desktop\minic\minic\redundelim.h
+	"common.h"
+	"set.h"
+
+1526738145 source:c:\users\志超\desktop\minic\minic\set.cpp
+	"set.h"
+
+1526917514 source:c:\users\志超\desktop\minic\minic\symbol.cpp
+	"symbol.h"
+	"error.h"
+	"token.h"
+	"genir.h"
+	"symtab.h"
+	"compiler.h"
+	"dfg.h"
+	"redundelim.h"
+	"livevar.h"
+	"alloc.h"
+	"selector.h"
+	"platform.h"
+
+1526738136 c:\users\志超\desktop\minic\minic\selector.h
+	"common.h"
+	"iloc.h"
+
+1526917043 source:c:\users\志超\desktop\minic\minic\symtab.cpp
+	"symtab.h"
+	"error.h"
+	"symbol.h"
+	"genir.h"
+	"compiler.h"
+
+1526915353 source:c:\users\志超\desktop\minic\minic\token.cpp
+	"token.h"
+	<sstream>
+	"error.h"
+
+1526917530 source:c:\users\志超\desktop\minic\minic\compiler.cpp
+	"compiler.h"
+	"lexer.h"
+	"error.h"
+	"symtab.h"
+	"genir.h"
+	"parser.h"
+
+1527058965 source:c:\users\志超\desktop\minic\minic\selector.cpp
+	"selector.h"
+	"intercode.h"
+	"symbol.h"
+	"platform.h"
+

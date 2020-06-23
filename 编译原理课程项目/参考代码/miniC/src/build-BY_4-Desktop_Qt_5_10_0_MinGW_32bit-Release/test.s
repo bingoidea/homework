@@ -1,0 +1,80 @@
+.section .rodata
+.data
+#未优化代码
+.text
+#函数main代码
+	.global main
+main:
+	push ebp
+	mov ebp,esp
+	# 开辟栈帧
+	sub esp,esp,20d
+	# 加载参数变量到寄存器
+	# 函数内代码
+	mov ax,0d
+	mov ax,[ebp-16d]
+	mov ax,0d
+	mov ax,[ebp-20d]
+	.L2 :
+	mov ax,1d
+	cmp ax,0d
+	jz .L3
+	jmp .L4
+	.L5 :
+	jmp .L2
+	.L4 :
+	mov ax,[ebp-16d]
+	mov bx,3d
+	cmp ax,bx
+	moveq ax,1d
+	movne ax,0d
+	mov ax,[ebp-24d]
+	mov ax,[ebp-16d]
+	mov bx,5d
+	cmp ax,bx
+	moveq ax,1d
+	movne ax,0d
+	mov ax,[ebp-28d]
+	mov ax,[ebp-24d]
+	mov bx,[ebp-28d]
+	cmp ax,0d
+	moveq ax,0d
+	movne ax,1d
+	cmpeq bx,0d
+	movne ax,1d
+	mov ax,[ebp-32d]
+	mov ax,[ebp-32d]
+	cmp ax,0d
+	jz .L9
+	jmp .L5
+	jmp .L10
+	.L9 :
+	.L10 :
+	mov ax,[ebp-16d]
+	mov bx,6d
+	cmp ax,bx
+	moveq ax,1d
+	movne ax,0d
+	mov ax,[ebp-24d]
+	mov ax,[ebp-24d]
+	cmp ax,0d
+	jz .L12
+	jmp .L3
+	jmp .L13
+	.L12 :
+	.L13 :
+	mov ax,[ebp-16d]
+	mov ax,[ebp-24d]
+	mov ax,[ebp-16d]
+	mov bx,1d
+	add ax,ax,bx
+	mov ax,[ebp-16d]
+	mov ax,[ebp-16d]
+	mov ax,[ebp-20d]
+	jmp .L5
+	.L3 :
+	mov ax,0d
+	jmp .L1
+	.L1 :
+	# 函数出口
+	ret 

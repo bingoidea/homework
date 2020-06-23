@@ -1,0 +1,97 @@
+﻿Qt制作类似notepad++的文本编辑器（参考网址：https://github.com/JosanSun/textEditor）
+1.QtNetwork：需要在配置文件.pro中添加语句QT += network
+2.QPrinter：需要在配置文件.pro中添加语句QT += printsupport
+3.QT_BEGIN_NAMESPACE的作用与namespace QT_NAMESPACE相同、
+4._MSC_VER：用于定义编译器的版本
+5.在程序中加入_MSC_VER宏可以根据编译器版本让不同版本的编译器选择性地编译一段程序
+6.#pragma execution_character_set("utf-8")   用于解决QT中显示中文字乱码
+7.增加打印功能支持：QtPrintSupport/qtprintsupportglobal.h
+8.qsciscintilla：Scintilla是一个免费、跨平台、支持语法高亮的编辑控件。
+				 它完整支持源代码的编辑和调试，包括语法高亮、错误指示、代码完成（code completion）和调用提示(call tips)。
+				 能包含标记（marker）的页边（margin）可用于标记断点、折叠和高亮当前行。
+				 QScintilla是Scintilla在QT上的移植。如果想在Qt上面使用强大的Scintilla控件，要安装QScintilla
+9.Qscitinlla使用：
+	Qscitinlla下载地址：https://riverbankcomputing.com/software/qscintilla/download
+	编译Qscitinlla：进入文件夹QScintilla_gpl-2.10.8\Qt4Qt5\
+					用QtCreator打开qscintilla.pro
+					右下角编译环境改成Release
+					启动构建,构建产生的文件之后会用到
+	新建项目
+	添加Qscitinlla静态库：右键项目文件夹,选择添加库
+						  选择外部库
+						  库文件选择到刚刚编译Qscitinlla时产生的构建文件夹
+						  选择静态库，Qt会自动在.pro文件中添加引用
+						  并将解压目录下的Qt4Qt5中的Qsci目录拷贝到新创建的工程目录下
+	添加头文件：#include <Qsci/qsciscintilla.h>
+	public中添加：QsciScintilla *editor=new QsciScintilla(this);
+	左下角编译环境选择Release，启动构建，若不报错,恭喜你,完成了准备工作
+10.QT中的Signal&Slot机制进行传值
+11.public slots：在这个区内声明的槽意味着任何对象都可将信号与之相连接。这对于组件编程非常有用，你可以创建彼此互不了解的对象，将它们的信号与槽进行连接以便信息能够正确的传递。
+   protected slots：在这个区内声明的槽意味着当前类及其子类可以将信号与之相连接。这适用于那些槽，它们是类实现的一部分，但是其界面接口却面向外部。
+   private slots：在这个区内声明的槽意味着只有类自己可以将信号与之相连接。这适用于联系非常紧密的类。
+12.void findPrevious(const QString &str,Qt::CaseSensitivity cs);这个函数想要带一个const QString &str字符串参数，而后面跟的Qt::CaseSensitivity cs则是指输入的大小写要敏感
+13.QMessageBox::warning(NULL, "warning", "Content", QMessageBox::Yes | QMessageBox::No, QMessageBox::Yes);
+14.QByteArray类：提供一个字节数组,QByteArray可用于存储原始字节（包括“\ 0” ）和传统的8位 “\ 0” 端接字符串 .
+15.QByteArray：contains()用于检查是否存在某字符串
+16.QTime：msecsTo(const QTime & t) const 计算距离时间t的毫秒数，如果t早于当前时间，则为负
+17.QTextCodec类提供了文本代码的相互转换
+18.转换字符串编码：
+   QByteArray encodedString = "...";
+   QTextCodec *codec = QTextCodec::codecForName("KOI8-R");
+   QString string = codec->toUnicode(encodedString);
+19.QIODevice::Text 容易造成打开文件格式不对
+				   对于读：end-of-line结束符被转译为'\n'
+                   对于写：end-of-line结束符被转译本地编码方式对应的字符。比如，在Win32下，是'\r\n'
+20.emit关键字用于发送信号激发槽函数
+21.QTabWidget：主要是用来分页显示的，每一页一个界面，众多界面公用一块区域，节省了界面大小，很方便的为用户显示更多的信息
+22.setCentralWidget：设置中心窗口， Qt应用程序的主窗口管理着中心窗口部件，它会在合适的时候销毁这个中心窗口部件
+					 每次程序调用setCentralWidget()方法时，先前存在的中心窗口部件将被新的所替换，而且主窗口会销毁原来的部件，无需用户处理
+23.QTabWidget::setFocus()：应用程序中，都会有一个当前窗口，即当前获得焦点事件的窗口，这个窗口可以接受键盘的输入。当应用有多个窗口时就要使用焦点事件了
+24.资源文件：新建资源文件用于引入图标
+25.textChanged()：发出文本区变化信号
+26.cursorPositionChanged(int, int)：检测光标位置变化
+27.lambda表达式：[capture](parameters) mutable ->return-type{statement}
+				 一般用于完成很简单的任务，是个匿名函数
+				 [capture]：捕捉列表。捕捉列表总是出现在Lambda函数的开始处，捕捉列表能够捕捉上下文中的变量以供Lambda函数使用
+				 (parameters)：参数列表。与普通函数的参数列表一致。如果不需要参数传递，则可以连同括号“()”一起省略
+				 mutable：mutable修饰符。默认情况下，Lambda函数总是一个const函数，mutable可以取消其常量性。在使用该修饰符时，参数列表不可省略（即使参数为空）
+				 ->return-type：返回类型。用追踪返回类型形式声明函数的返回类型。我们可以在不需要返回值的时候也可以连同符号”->”一起省略
+				 {statement}：函数体。内容与普通函数一样，不过除了可以使用参数之外，还可以使用所有捕获的变量
+				 Lambda函数还可以通过捕获列表访问一些上下文中的数据。具体地，捕捉列表描述了上下文中哪些数据可以被Lambda使用，以及使用方式（以值传递的方式或引用传递的方式）
+				 1.[var]表示值传递方式捕捉变量var；
+				 2.[=]表示值传递方式捕捉所有父作用域的变量（包括this）；
+				 3.[&var]表示引用传递捕捉变量var；
+				 4.[&]表示引用传递方式捕捉所有父作用域的变量（包括this）；
+				 5.[this]表示值传递方式捕捉当前的this指针。
+				 上面提到了一个父作用域，也就是包含Lambda函数的语句块，说通俗点就是包含Lambda的“{}”代码块
+				 1.[=,&a,&b]表示以引用传递的方式捕捉变量a和b，以值传递方式捕捉其它所有变量;
+				 2.[&,a,this]表示以值传递的方式捕捉变量a和this，引用传递方式捕捉其它所有变量。
+				 不过值得注意的是，捕捉列表不允许变量重复传递。下面一些例子就是典型的重复，会导致编译时期的错误。例如：
+				 3.[=,a]这里已经以值传递方式捕捉了所有变量，但是重复捕捉a了，会报错的;
+				 4.[&,&this]这里&已经以引用传递方式捕捉了所有变量，再捕捉this也是一种重复。
+28.event->accept()：将作用当前的窗口隐藏（这样就做到子窗口功能消失这个功能）
+29.QToolBar出现的地方在菜单栏的下面
+30.使用QKeySequence类来添加快捷键，会根据平台的不同来定义相应的快捷键，QKeySequence类中定义了一套跨平台的快捷键列表。QKeySequence::New在window平台的大多数软件等同于Ctrl+N
+31.clicked 一般指点击、按下; triggered 一般是QAction等被触发; activated 一般指控件被激活等（激活原因可以有很多）
+32.dataChanged() 信号,以便监听剪贴板数据变化； *QApplication::clipboard()返回一个只向全局粘贴板的指针
+33.setCheckable(true)为属性，表示可以选中；setChecked（true）为属性的值，表示已经选中
+34.setToolTip ("ToolTip"); //鼠标放到控件上，浮动出一个小黄框    setStatusTip ("StatusTip"); //状态栏提示
+35.menuBar()返回窗口的菜单栏，若没有则新建一个,一个窗口只有一个菜单栏
+36.Qt中的部件的弹出菜单(ContextMenu)，依据ContextMenuPolicy的值的不同，有四种形式
+	1.ContextMenuPolicy的值为Qt::DefaultContextMenu，这是默认值，其将显示部件定义的默认菜单
+	2.ContextMenuPolicy的值为Qt::NoContextMenu，无菜单
+	3.ContextMenuPolicy的值为Qt::ActionsContextMenu,要为此部件定义这种菜单，很简单，只要把已经定义好的Action部件插入到要显示此菜单的部件中，部件将自动按顺序显示菜单。
+	4.ContextMenuPolicy的值为Qt::CustomContextMenu，这回，有两种方式来定义菜单，一种是响应customContextMenuRequested()这个signal，在响应的槽中显示菜单(QMenu的exec()方法)。第二种是需要从这个部件的类中派生一个类，重写contextMenuEvent()这个函数显示菜单(QMenu的exec()方法显示)。
+37.sizeHint这个属性所保存的 QSize 类型的值是一个被推荐给窗口或其它组件（为了方便下面统称为widget）的尺寸，也就是说一个 widget 该有多大，它的一个参考来源就是这个 sizeHint 属性的值，而这个值由 sizeHint() 函数来确定
+38.statusBar()->addWidget显示正常信息； statusBar()->addPermanentWidget(); 现实永久信息； statusBar->showMessage(tr("临时信息!"),2000);//显示临时信息2000ms
+39.void QApplication::setOverrideCursor (const QCursor & cursor,bool replace FALSE ) 设置应用程序强制光标为cursor
+40.应用程序光标被存储到内部栈中。setOverrideCursor()把光标压到栈中，并且restoreOverrideCursor()把激活的光标从栈中弹出。每一个setOverrideCursor()都必须最后有一个对应的restoreOverrideCursor()跟着，否则栈将永远不会被清空。
+41.QCryptographicHash类提供了生成密码散列的方法。该类可以用于生成二进制或文本数据的加密散列值。目前支持MD4、MD5、SHA-1、SHA-224、SHA-256、SHA-384和SHA-512
+42.每个对象都有objectName()，也可以通过metaObject()获得它的类名。可以使用inherits()检测对象的类是否在某个类的继承层次结构中
+43.QStringLiteral 是Qt5中新引入的一个用来从“字符串常量”创建QString对象的宏
+44.addwidget(); 6个参数表示控件名，行，列，占用行数，占用列数，对齐方式
+45.QPlainTextEdit 多行简单文本框用 toPlainText()；QTextEdit 富文本框，简单文本用toPlainText(), 富文本用 toHtml();QLineEdit 用 text()
+46.~Qt::WindowContextHelpButtonHint去掉对话框右上角的？
+47.Q_INIT_RESOURCE(myapp); 如果我们的资源被放置在myapp.qrc文件中，我们可以添加如下的代码确保应用程序在启动时初始化资源。
+48.Q_INIT_RESOURCE是Qt的资源机制（resource mechanism)，它使程序在编译时将图片存储在.cpp文件中，运行时连接它
+49.

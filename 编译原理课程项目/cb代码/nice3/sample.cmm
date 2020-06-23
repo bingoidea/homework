@@ -1,0 +1,18 @@
+/* A C minus program */
+
+int gcd (int u,int v)
+{
+	if(v==0) return u;
+	else return gcd(v,u-u/v*v);
+//	output(gcd(u,v,u));
+/* u-u/v*v == u mod v
+hello */
+}
+
+void main(void)
+{
+	int x;int y; // /*/ My single line comment
+	x=input();y=input();
+	output(gcd(x,y));
+}
+	

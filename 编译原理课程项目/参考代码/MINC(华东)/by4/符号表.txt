@@ -1,0 +1,10 @@
+Void;
+Int;
+Char;
+Add;
+Equle;
+Semic;//;
+par_L;//(    
+par_R;//)
+pab_L;//{
+pab_R;//}

@@ -1,0 +1,10 @@
+debug/main.o
+debug/mainwindow.o
+debug/parse.o
+debug/scan.o
+debug/util.o
+debug/analyze.o
+debug/symtab.o
+debug/cgen.o
+debug/code.o
+debug/moc_mainwindow.o

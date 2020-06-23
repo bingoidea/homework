@@ -1,0 +1,3 @@
+test文件夹中的BMITest2对应BMI的构造器注入方式，BMITest3对应BMI的参数注入方式，
+BloodPressureTest对应血压的构造器注入方式
+TestSuiteWithBMIAndBloodPressure对应套件测试

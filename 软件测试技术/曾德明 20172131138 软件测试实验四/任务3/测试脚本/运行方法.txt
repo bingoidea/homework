@@ -1,0 +1,1 @@
+直接用idea打开，然后运行BMITest.java就可以了

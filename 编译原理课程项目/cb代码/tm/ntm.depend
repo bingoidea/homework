@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1592123995 source:d:\学习，下学期\ide\ntm\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1592450638 source:f:\明个人文件夹\codeblock\ntm\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1592574356 source:f:\明个人文件夹\codeblock\tm\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+

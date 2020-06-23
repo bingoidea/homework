@@ -1,0 +1,988 @@
+# depslib dependency file v1.0
+1526014143 source:f:\compiler\compiler-7\main.cpp
+	<iostream>
+
+1525877798 source:f:\compiler\compiler-7\parsetest.cpp
+	<iostream>
+	"global.h"
+	"Parser.h"
+
+1525788540 source:f:\compiler\compiler-7\src\fun.cpp
+	"Fun.h"
+	"Error.h"
+	"GenIR.h"
+
+1525487493 f:\compiler\compiler-7\include\fun.h
+	"InterInst.h"
+	"Lex.h"
+	"global.h"
+
+1525879535 f:\compiler\compiler-7\include\interinst.h
+	"Operator.h"
+	"Fun.h"
+	<string>
+	"Var.h"
+	<stdio.h>
+	<stdlib.h>
+
+1525876303 f:\compiler\compiler-7\include\operator.h
+	<string>
+
+1525017297 f:\compiler\compiler-7\include\var.h
+	<vector>
+	<string>
+	"TokenType.h"
+	"Token.h"
+	"global.h"
+	"Lex.h"
+
+1525006132 f:\compiler\compiler-7\include\tokentype.h
+	<string>
+
+1522411057 f:\compiler\compiler-7\include\token.h
+	<string>
+	"TokenType.h"
+
+1525881118 f:\compiler\compiler-7\include\global.h
+	"Lex.h"
+	"Scanner.h"
+	"SymTab.h"
+	"GenIR.h"
+	"InterInst.h"
+	<stdio.h>
+
+1525003850 f:\compiler\compiler-7\include\lex.h
+	"Token.h"
+	"Scanner.h"
+	<string>
+	<windows.h>
+	<tchar.h>
+	"global.h"
+
+1525004969 f:\compiler\compiler-7\include\scanner.h
+	<stdio.h>
+	"global.h"
+	<string>
+
+1525944520 f:\compiler\compiler-7\include\symtab.h
+	<hash_map>
+	<string>
+	"Var.h"
+	"Fun.h"
+	"Lex.h"
+	"GenIR.h"
+	"GenIR.h"
+	"global.h"
+	"InterInst.h"
+
+1524969278 f:\compiler\compiler-7\include\genir.h
+	"Var.h"
+	"Fun.h"
+	"SymTab.h"
+	"Var.h"
+	"Fun.h"
+	"InterInst.h"
+	"global.h"
+
+1525015398 f:\compiler\compiler-7\include\error.h
+	"global.h"
+	<iostream>
+
+1525843877 source:f:\compiler\compiler-7\src\genir.cpp
+	"GenIR.h"
+	<sstream>
+	"Error.h"
+
+1525877983 source:f:\compiler\compiler-7\src\global.cpp
+	"global.h"
+	<stdio.h>
+	<stdlib.h>
+
+1525878818 source:f:\compiler\compiler-7\src\interinst.cpp
+	"InterInst.h"
+	<string>
+	"global.h"
+
+1526039809 source:f:\compiler\compiler-7\src\parser.cpp
+	"Parser.h"
+	"Num.h"
+	"Id.h"
+	<iostream>
+	<iomanip>
+
+1524969593 f:\compiler\compiler-7\include\parser.h
+	"global.h"
+	"Error.h"
+
+1522336517 f:\compiler\compiler-7\include\num.h
+	"Token.h"
+	"TokenType.h"
+	<string>
+	<sstream>
+
+1522336517 f:\compiler\compiler-7\include\id.h
+	<string>
+	"Token.h"
+
+1525005285 source:f:\compiler\compiler-7\src\scanner.cpp
+	"Scanner.h"
+	<string>
+
+1525944520 source:f:\compiler\compiler-7\src\symtab.cpp
+	"SymTab.h"
+	"Error.h"
+
+1526038326 source:f:\compiler\compiler-7\src\var.cpp
+	"Var.h"
+	"Num.h"
+	"Char.h"
+	"Str.h"
+	"GenIR.h"
+	"Error.h"
+
+1522336517 f:\compiler\compiler-7\include\char.h
+	"Token.h"
+	"TokenType.h"
+
+1522336517 f:\compiler\compiler-7\include\str.h
+	"Token.h"
+	"TokenType.h"
+	<string>
+
+1525875540 source:f:\compiler\compiler-7\lextest.cpp
+	<iostream>
+	"global.h"
+
+1525061821 source:f:\compiler\compiler-7\src\lex.cpp
+	"Lex.h"
+	<Scanner.h>
+	<stdio.h>
+	<string>
+	<Keywords.h>
+	<Token.h>
+	<Id.h>
+	<Num.h>
+	<Error.h>
+	"Str.h"
+	"Char.h"
+	<iostream>
+	<iomanip>
+
+1525006108 f:\compiler\compiler-7\include\keywords.h
+	<hash_map>
+	<string>
+	<TokenType.h>
+
+1525944846 source:f:\compiler\compiler-7\asmtest.cpp
+	<iostream>
+	"global.h"
+	"Parser.h"
+	<stdio.h>
+
+1525877414 source:f:\compiler\compiler-7\irtest.cpp
+	<iostream>
+	"global.h"
+	"Parser.h"
+
+1526055402 source:f:\compiler\compiler-8\asmtest.cpp
+	<iostream>
+	"global.h"
+	"Parser.h"
+	<stdio.h>
+
+1525881118 f:\compiler\compiler-8\include\global.h
+	"Lex.h"
+	"Scanner.h"
+	"SymTab.h"
+	"GenIR.h"
+	"InterInst.h"
+	<stdio.h>
+
+1525003850 f:\compiler\compiler-8\include\lex.h
+	"Token.h"
+	"Scanner.h"
+	<string>
+	<windows.h>
+	<tchar.h>
+	"global.h"
+
+1522411057 f:\compiler\compiler-8\include\token.h
+	<string>
+	"TokenType.h"
+
+1525006132 f:\compiler\compiler-8\include\tokentype.h
+	<string>
+
+1525004969 f:\compiler\compiler-8\include\scanner.h
+	<stdio.h>
+	"global.h"
+	<string>
+
+1525944520 f:\compiler\compiler-8\include\symtab.h
+	<hash_map>
+	<string>
+	"Var.h"
+	"Fun.h"
+	"Lex.h"
+	"GenIR.h"
+	"GenIR.h"
+	"global.h"
+	"InterInst.h"
+
+1526044922 f:\compiler\compiler-8\include\var.h
+	<vector>
+	<string>
+	"TokenType.h"
+	"Token.h"
+	"global.h"
+	"Lex.h"
+
+1525487493 f:\compiler\compiler-8\include\fun.h
+	"InterInst.h"
+	"Lex.h"
+	"global.h"
+
+1525879535 f:\compiler\compiler-8\include\interinst.h
+	"Operator.h"
+	"Fun.h"
+	<string>
+	"Var.h"
+	<stdio.h>
+	<stdlib.h>
+
+1525876303 f:\compiler\compiler-8\include\operator.h
+	<string>
+
+1524969278 f:\compiler\compiler-8\include\genir.h
+	"Var.h"
+	"Fun.h"
+	"SymTab.h"
+	"Var.h"
+	"Fun.h"
+	"InterInst.h"
+	"global.h"
+
+1526044922 f:\compiler\compiler-8\include\parser.h
+	"global.h"
+	"Error.h"
+
+1525015398 f:\compiler\compiler-8\include\error.h
+	"global.h"
+	<iostream>
+
+1525877414 source:f:\compiler\compiler-8\irtest.cpp
+	<iostream>
+	"global.h"
+	"Parser.h"
+
+1525875540 source:f:\compiler\compiler-8\lextest.cpp
+	<iostream>
+	"global.h"
+
+1526014143 source:f:\compiler\compiler-8\main.cpp
+	<iostream>
+
+1525877798 source:f:\compiler\compiler-8\parsetest.cpp
+	<iostream>
+	"global.h"
+	"Parser.h"
+
+1526047107 source:f:\compiler\compiler-8\src\fun.cpp
+	"Fun.h"
+	"Error.h"
+	"GenIR.h"
+
+1525843877 source:f:\compiler\compiler-8\src\genir.cpp
+	"GenIR.h"
+	<sstream>
+	"Error.h"
+
+1525877983 source:f:\compiler\compiler-8\src\global.cpp
+	"global.h"
+	<stdio.h>
+	<stdlib.h>
+
+1525878818 source:f:\compiler\compiler-8\src\interinst.cpp
+	"InterInst.h"
+	<string>
+	"global.h"
+
+1525061821 source:f:\compiler\compiler-8\src\lex.cpp
+	"Lex.h"
+	<Scanner.h>
+	<stdio.h>
+	<string>
+	<Keywords.h>
+	<Token.h>
+	<Id.h>
+	<Num.h>
+	<Error.h>
+	"Str.h"
+	"Char.h"
+	<iostream>
+	<iomanip>
+
+1525006108 f:\compiler\compiler-8\include\keywords.h
+	<hash_map>
+	<string>
+	<TokenType.h>
+
+1522336517 f:\compiler\compiler-8\include\id.h
+	<string>
+	"Token.h"
+
+1522336517 f:\compiler\compiler-8\include\num.h
+	"Token.h"
+	"TokenType.h"
+	<string>
+	<sstream>
+
+1522336517 f:\compiler\compiler-8\include\str.h
+	"Token.h"
+	"TokenType.h"
+	<string>
+
+1522336517 f:\compiler\compiler-8\include\char.h
+	"Token.h"
+	"TokenType.h"
+
+1526055402 source:f:\compiler\compiler-8\src\parser.cpp
+	"Parser.h"
+	"Num.h"
+	"Id.h"
+	<iostream>
+	<iomanip>
+
+1525005285 source:f:\compiler\compiler-8\src\scanner.cpp
+	"Scanner.h"
+	<string>
+
+1525944520 source:f:\compiler\compiler-8\src\symtab.cpp
+	"SymTab.h"
+	"Error.h"
+
+1526045587 source:f:\compiler\compiler-8\src\var.cpp
+	"Var.h"
+	"Num.h"
+	"Char.h"
+	"Str.h"
+	"GenIR.h"
+	"Error.h"
+
+1525877414 source:f:\compiler\compiler-9\irtest.cpp
+	<iostream>
+	"global.h"
+	"Parser.h"
+
+1526227409 f:\compiler\compiler-9\include\global.h
+	"Lex.h"
+	"Scanner.h"
+	"SymTab.h"
+	"GenIR.h"
+	"InterInst.h"
+	<stdio.h>
+	<windows.h>
+	<string>
+
+1526194446 f:\compiler\compiler-9\include\lex.h
+	"Token.h"
+	"Scanner.h"
+	<string>
+	<windows.h>
+	<tchar.h>
+	"global.h"
+	<vector>
+
+1522411057 f:\compiler\compiler-9\include\token.h
+	<string>
+	"TokenType.h"
+
+1525006132 f:\compiler\compiler-9\include\tokentype.h
+	<string>
+
+1525004969 f:\compiler\compiler-9\include\scanner.h
+	<stdio.h>
+	"global.h"
+	<string>
+
+1526178369 f:\compiler\compiler-9\include\symtab.h
+	<hash_map>
+	<string>
+	"Var.h"
+	"Fun.h"
+	"Lex.h"
+	"GenIR.h"
+	"GenIR.h"
+	"global.h"
+	"InterInst.h"
+
+1526044922 f:\compiler\compiler-9\include\var.h
+	<vector>
+	<string>
+	"TokenType.h"
+	"Token.h"
+	"global.h"
+	"Lex.h"
+
+1525487493 f:\compiler\compiler-9\include\fun.h
+	"InterInst.h"
+	"Lex.h"
+	"global.h"
+
+1525879535 f:\compiler\compiler-9\include\interinst.h
+	"Operator.h"
+	"Fun.h"
+	<string>
+	"Var.h"
+	<stdio.h>
+	<stdlib.h>
+
+1525876303 f:\compiler\compiler-9\include\operator.h
+	<string>
+
+1524969278 f:\compiler\compiler-9\include\genir.h
+	"Var.h"
+	"Fun.h"
+	"SymTab.h"
+	"Var.h"
+	"Fun.h"
+	"InterInst.h"
+	"global.h"
+
+1526217293 f:\compiler\compiler-9\include\parser.h
+	"global.h"
+	"Error.h"
+
+1526196304 f:\compiler\compiler-9\include\error.h
+	"global.h"
+	<iostream>
+
+1526086102 source:f:\compiler\compiler-9\lextest.cpp
+	<iostream>
+	"global.h"
+
+1525877798 source:f:\compiler\compiler-9\parsetest.cpp
+	<iostream>
+	"global.h"
+	"Parser.h"
+
+1526047107 source:f:\compiler\compiler-9\src\fun.cpp
+	"Fun.h"
+	"Error.h"
+	"GenIR.h"
+
+1526264808 source:f:\compiler\compiler-9\src\genir.cpp
+	"GenIR.h"
+	<sstream>
+	"Error.h"
+
+1526263739 source:f:\compiler\compiler-9\src\global.cpp
+	"global.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1526260952 source:f:\compiler\compiler-9\src\interinst.cpp
+	"InterInst.h"
+	<string>
+	"global.h"
+
+1526263500 source:f:\compiler\compiler-9\src\lex.cpp
+	"Lex.h"
+	<Scanner.h>
+	<stdio.h>
+	<string>
+	<Keywords.h>
+	<Token.h>
+	<Id.h>
+	<Num.h>
+	<Error.h>
+	"Str.h"
+	"Char.h"
+	<iostream>
+	<iomanip>
+	<ostream>
+	<fstream>
+	<direct.h>
+	<windows.h>
+	<shlwapi.h>
+
+1525006108 f:\compiler\compiler-9\include\keywords.h
+	<hash_map>
+	<string>
+	<TokenType.h>
+
+1522336517 f:\compiler\compiler-9\include\id.h
+	<string>
+	"Token.h"
+
+1522336517 f:\compiler\compiler-9\include\num.h
+	"Token.h"
+	"TokenType.h"
+	<string>
+	<sstream>
+
+1522336517 f:\compiler\compiler-9\include\str.h
+	"Token.h"
+	"TokenType.h"
+	<string>
+
+1522336517 f:\compiler\compiler-9\include\char.h
+	"Token.h"
+	"TokenType.h"
+
+1526262732 source:f:\compiler\compiler-9\src\parser.cpp
+	"Parser.h"
+	"Num.h"
+	"Id.h"
+	<iostream>
+	<iomanip>
+	<fstream>
+	<string>
+
+1525005285 source:f:\compiler\compiler-9\src\scanner.cpp
+	"Scanner.h"
+	<string>
+
+1526260700 source:f:\compiler\compiler-9\src\symtab.cpp
+	"SymTab.h"
+	"Error.h"
+	<fstream>
+
+1526045587 source:f:\compiler\compiler-9\src\var.cpp
+	"Var.h"
+	"Num.h"
+	"Char.h"
+	"Str.h"
+	"GenIR.h"
+	"Error.h"
+
+1526084613 source:f:\compiler\compiler-9\asmtest.cpp
+	<iostream>
+	"global.h"
+	"Parser.h"
+	<stdio.h>
+
+1526228321 source:f:\compiler\compiler-9\main.cpp
+	<iostream>
+	"global.h"
+	<string.h>
+	"Parser.h"
+	<iomanip>
+	<stdio.h>
+	<windows.h>
+	<fstream>
+
+1526084613 source:f:\compiler\compiler-10\asmtest.cpp
+	<iostream>
+	"global.h"
+	"Parser.h"
+	<stdio.h>
+
+1526227409 f:\compiler\compiler-10\include\global.h
+	"Lex.h"
+	"Scanner.h"
+	"SymTab.h"
+	"GenIR.h"
+	"InterInst.h"
+	<stdio.h>
+	<windows.h>
+	<string>
+
+1526194446 f:\compiler\compiler-10\include\lex.h
+	"Token.h"
+	"Scanner.h"
+	<string>
+	<windows.h>
+	<tchar.h>
+	"global.h"
+	<vector>
+
+1522411057 f:\compiler\compiler-10\include\token.h
+	<string>
+	"TokenType.h"
+
+1525006132 f:\compiler\compiler-10\include\tokentype.h
+	<string>
+
+1525004969 f:\compiler\compiler-10\include\scanner.h
+	<stdio.h>
+	"global.h"
+	<string>
+
+1526178369 f:\compiler\compiler-10\include\symtab.h
+	<hash_map>
+	<string>
+	"Var.h"
+	"Fun.h"
+	"Lex.h"
+	"GenIR.h"
+	"GenIR.h"
+	"global.h"
+	"InterInst.h"
+
+1526044922 f:\compiler\compiler-10\include\var.h
+	<vector>
+	<string>
+	"TokenType.h"
+	"Token.h"
+	"global.h"
+	"Lex.h"
+
+1525487493 f:\compiler\compiler-10\include\fun.h
+	"InterInst.h"
+	"Lex.h"
+	"global.h"
+
+1526728906 f:\compiler\compiler-10\include\interinst.h
+	"Operator.h"
+	"Fun.h"
+	<string>
+	"Var.h"
+	<stdio.h>
+	<stdlib.h>
+
+1526728517 f:\compiler\compiler-10\include\operator.h
+	<string>
+
+1526802348 f:\compiler\compiler-10\include\genir.h
+	"Var.h"
+	"Fun.h"
+	"SymTab.h"
+	"Var.h"
+	"Fun.h"
+	"InterInst.h"
+	"global.h"
+
+1526728517 f:\compiler\compiler-10\include\parser.h
+	"global.h"
+	"Error.h"
+
+1526196304 f:\compiler\compiler-10\include\error.h
+	"global.h"
+	<iostream>
+
+1525877414 source:f:\compiler\compiler-10\irtest.cpp
+	<iostream>
+	"global.h"
+	"Parser.h"
+
+1526086102 source:f:\compiler\compiler-10\lextest.cpp
+	<iostream>
+	"global.h"
+
+1526997269 source:f:\compiler\compiler-10\main.cpp
+	<iostream>
+	"global.h"
+	<string.h>
+	"Parser.h"
+	<iomanip>
+	<stdio.h>
+	<windows.h>
+	<fstream>
+
+1525877798 source:f:\compiler\compiler-10\parsetest.cpp
+	<iostream>
+	"global.h"
+	"Parser.h"
+
+1526047107 source:f:\compiler\compiler-10\src\fun.cpp
+	"Fun.h"
+	"Error.h"
+	"GenIR.h"
+
+1526802441 source:f:\compiler\compiler-10\src\genir.cpp
+	"GenIR.h"
+	<sstream>
+	"Error.h"
+
+1526263739 source:f:\compiler\compiler-10\src\global.cpp
+	"global.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1526997102 source:f:\compiler\compiler-10\src\interinst.cpp
+	"InterInst.h"
+	<string>
+	"global.h"
+
+1526876472 source:f:\compiler\compiler-10\src\lex.cpp
+	"Lex.h"
+	<Scanner.h>
+	<stdio.h>
+	<string>
+	<Keywords.h>
+	<Token.h>
+	<Id.h>
+	<Num.h>
+	<Error.h>
+	"Str.h"
+	"Char.h"
+	<iostream>
+	<iomanip>
+	<ostream>
+	<fstream>
+	<direct.h>
+	<windows.h>
+	<shlwapi.h>
+
+1525006108 f:\compiler\compiler-10\include\keywords.h
+	<hash_map>
+	<string>
+	<TokenType.h>
+
+1522336517 f:\compiler\compiler-10\include\id.h
+	<string>
+	"Token.h"
+
+1522336517 f:\compiler\compiler-10\include\num.h
+	"Token.h"
+	"TokenType.h"
+	<string>
+	<sstream>
+
+1522336517 f:\compiler\compiler-10\include\str.h
+	"Token.h"
+	"TokenType.h"
+	<string>
+
+1522336517 f:\compiler\compiler-10\include\char.h
+	"Token.h"
+	"TokenType.h"
+
+1526997413 source:f:\compiler\compiler-10\src\parser.cpp
+	"Parser.h"
+	"Num.h"
+	"Id.h"
+	<iostream>
+	<iomanip>
+	<fstream>
+	<string>
+
+1525005285 source:f:\compiler\compiler-10\src\scanner.cpp
+	"Scanner.h"
+	<string>
+
+1527003638 source:f:\compiler\compiler-10\src\symtab.cpp
+	"SymTab.h"
+	"Error.h"
+	<fstream>
+
+1526804312 source:f:\compiler\compiler-10\src\var.cpp
+	"Var.h"
+	"Num.h"
+	"Char.h"
+	"Str.h"
+	"GenIR.h"
+	"Error.h"
+
+1526084613 source:f:\compiler\compiler-11\asmtest.cpp
+	<iostream>
+	"global.h"
+	"Parser.h"
+	<stdio.h>
+
+1527225641 f:\compiler\compiler-11\include\global.h
+	"Lex.h"
+	"Scanner.h"
+	"SymTab.h"
+	"GenIR.h"
+	"InterInst.h"
+	<stdio.h>
+	<windows.h>
+	<string>
+
+1527126130 f:\compiler\compiler-11\include\lex.h
+	"Token.h"
+	"Scanner.h"
+	<string>
+	<windows.h>
+	<tchar.h>
+	"global.h"
+	<vector>
+
+1522411057 f:\compiler\compiler-11\include\token.h
+	<string>
+	"TokenType.h"
+
+1525006132 f:\compiler\compiler-11\include\tokentype.h
+	<string>
+
+1525004969 f:\compiler\compiler-11\include\scanner.h
+	<stdio.h>
+	"global.h"
+	<string>
+
+1527406012 f:\compiler\compiler-11\include\symtab.h
+	<hash_map>
+	<string>
+	"Var.h"
+	"Fun.h"
+	"Lex.h"
+	"GenIR.h"
+	"GenIR.h"
+	"global.h"
+	"InterInst.h"
+
+1527411298 f:\compiler\compiler-11\include\var.h
+	<vector>
+	<string>
+	"TokenType.h"
+	"Token.h"
+	"global.h"
+	"Lex.h"
+
+1527476272 f:\compiler\compiler-11\include\fun.h
+	"InterInst.h"
+	"Lex.h"
+	"global.h"
+
+1527247045 f:\compiler\compiler-11\include\interinst.h
+	"Operator.h"
+	"Fun.h"
+	<string>
+	"Var.h"
+	<stdio.h>
+	<stdlib.h>
+
+1527411298 f:\compiler\compiler-11\include\operator.h
+	<string>
+
+1527417697 f:\compiler\compiler-11\include\genir.h
+	"Var.h"
+	"Fun.h"
+	"SymTab.h"
+	"Var.h"
+	"Fun.h"
+	"InterInst.h"
+	"global.h"
+
+1527417697 f:\compiler\compiler-11\include\parser.h
+	"global.h"
+	"Error.h"
+	"SymTab.h"
+
+1527390027 f:\compiler\compiler-11\include\error.h
+	"global.h"
+	<iostream>
+
+1525877414 source:f:\compiler\compiler-11\irtest.cpp
+	<iostream>
+	"global.h"
+	"Parser.h"
+
+1526086102 source:f:\compiler\compiler-11\lextest.cpp
+	<iostream>
+	"global.h"
+
+1527436640 source:f:\compiler\compiler-11\main.cpp
+	<iostream>
+	"global.h"
+	<string.h>
+	"Parser.h"
+	<iomanip>
+	<stdio.h>
+	<windows.h>
+	<fstream>
+
+1525877798 source:f:\compiler\compiler-11\parsetest.cpp
+	<iostream>
+	"global.h"
+	"Parser.h"
+
+1527477300 source:f:\compiler\compiler-11\src\fun.cpp
+	"Fun.h"
+	"Error.h"
+	"GenIR.h"
+
+1527417697 source:f:\compiler\compiler-11\src\genir.cpp
+	"GenIR.h"
+	<sstream>
+	"Error.h"
+
+1527225748 source:f:\compiler\compiler-11\src\global.cpp
+	"global.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<vector>
+
+1527483893 source:f:\compiler\compiler-11\src\interinst.cpp
+	"InterInst.h"
+	<string>
+	"global.h"
+
+1527484517 source:f:\compiler\compiler-11\src\parser.cpp
+	"Parser.h"
+	"Num.h"
+	"Id.h"
+	<iostream>
+	<iomanip>
+	<fstream>
+	<string>
+	<global.h>
+	<Str.h>
+
+1522336517 f:\compiler\compiler-11\include\num.h
+	"Token.h"
+	"TokenType.h"
+	<string>
+	<sstream>
+
+1522336517 f:\compiler\compiler-11\include\id.h
+	<string>
+	"Token.h"
+
+1525005285 source:f:\compiler\compiler-11\src\scanner.cpp
+	"Scanner.h"
+	<string>
+
+1527406141 source:f:\compiler\compiler-11\src\symtab.cpp
+	"SymTab.h"
+	"Error.h"
+	<fstream>
+
+1527411298 source:f:\compiler\compiler-11\src\var.cpp
+	"Var.h"
+	"Num.h"
+	"Char.h"
+	"Str.h"
+	"GenIR.h"
+	"Error.h"
+
+1522336517 f:\compiler\compiler-11\include\char.h
+	"Token.h"
+	"TokenType.h"
+
+1522336517 f:\compiler\compiler-11\include\str.h
+	"Token.h"
+	"TokenType.h"
+	<string>
+
+1527419161 source:f:\compiler\compiler-11\src\lex.cpp
+	"Lex.h"
+	<Scanner.h>
+	<stdio.h>
+	<string>
+	<Keywords.h>
+	<Token.h>
+	<Id.h>
+	<Num.h>
+	<Error.h>
+	"Str.h"
+	"Char.h"
+	<iostream>
+	<iomanip>
+	<ostream>
+	<fstream>
+	<direct.h>
+	<windows.h>
+	<shlwapi.h>
+	"global.h"
+
+1525006108 f:\compiler\compiler-11\include\keywords.h
+	<hash_map>
+	<string>
+	<TokenType.h>
+

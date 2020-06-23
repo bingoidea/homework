@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/Mykeywords">
+        <file>keywords/c++keywords.txt</file>
+        <file>keywords/Javakeywords.txt</file>
+        <file>keywords/Pythonkeywords.txt</file>
+    </qresource>
+</RCC>

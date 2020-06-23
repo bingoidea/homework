@@ -1,0 +1,1 @@
+test文件夹中的BMITest2对应构造器注入，BMITest3对应参数注入

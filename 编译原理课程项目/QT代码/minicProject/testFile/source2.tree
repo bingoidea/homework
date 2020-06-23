@@ -1,0 +1,434 @@
+
+MINI-C COMPILATION: E:/QTproject/minicProject/testFile/source2.tree
+
+   1: /*
+   2: A program to perform selection sort
+   3: on a 10 element array.
+   4: */
+   5: 
+   6: int x[10];
+	6: reserved word: int
+	6: ID, name= x
+	6: [
+	6: NUM, val= 10
+	6: ]
+	6: ;
+   7: 
+   8: int minloc(int a[], int low, int high) {
+	8: reserved word: int
+	8: ID, name= minloc
+	8: (
+	8: reserved word: int
+	8: ID, name= a
+	8: [
+	8: ]
+	8: ,
+	8: reserved word: int
+	8: ID, name= low
+	8: ,
+	8: reserved word: int
+	8: ID, name= high
+	8: )
+	8: {
+   9: int i;
+	9: reserved word: int
+	9: ID, name= i
+	9: ;
+  10: int x;
+	10: reserved word: int
+	10: ID, name= x
+	10: ;
+  11: int k;
+	11: reserved word: int
+	11: ID, name= k
+	11: ;
+  12: 
+  13: k = low;
+	13: ID, name= k
+	13: =
+	13: ID, name= low
+	13: ;
+  14: x = a[low];
+	14: ID, name= x
+	14: =
+	14: ID, name= a
+	14: [
+	14: ID, name= low
+	14: ]
+	14: ;
+  15: i = low + 1;
+	15: ID, name= i
+	15: =
+	15: ID, name= low
+	15: +
+	15: NUM, val= 1
+	15: ;
+  16: 
+  17: while(i < high) {
+	17: reserved word: while
+	17: (
+	17: ID, name= i
+	17: <
+	17: ID, name= high
+	17: )
+	17: {
+  18: if(a[i] < x) {
+	18: reserved word: if
+	18: (
+	18: ID, name= a
+	18: [
+	18: ID, name= i
+	18: ]
+	18: <
+	18: ID, name= x
+	18: )
+	18: {
+  19: x = a[i];
+	19: ID, name= x
+	19: =
+	19: ID, name= a
+	19: [
+	19: ID, name= i
+	19: ]
+	19: ;
+  20: k = i;
+	20: ID, name= k
+	20: =
+	20: ID, name= i
+	20: ;
+  21: }
+	21: }
+  22: i = i + 1;
+	22: ID, name= i
+	22: =
+	22: ID, name= i
+	22: +
+	22: NUM, val= 1
+	22: ;
+  23: }
+	23: }
+  24: return k;
+	24: reserved word: return
+	24: ID, name= k
+	24: ;
+  25: }
+	25: }
+  26: 
+  27: void sort(int a[], int low, int high) {
+	27: reserved word: void
+	27: ID, name= sort
+	27: (
+	27: reserved word: int
+	27: ID, name= a
+	27: [
+	27: ]
+	27: ,
+	27: reserved word: int
+	27: ID, name= low
+	27: ,
+	27: reserved word: int
+	27: ID, name= high
+	27: )
+	27: {
+  28: int i;
+	28: reserved word: int
+	28: ID, name= i
+	28: ;
+  29: int k;
+	29: reserved word: int
+	29: ID, name= k
+	29: ;
+  30: 
+  31: i = low;
+	31: ID, name= i
+	31: =
+	31: ID, name= low
+	31: ;
+  32: while(i < high - 1) {
+	32: reserved word: while
+	32: (
+	32: ID, name= i
+	32: <
+	32: ID, name= high
+	32: -
+	32: NUM, val= 1
+	32: )
+	32: {
+  33: int t;
+	33: reserved word: int
+	33: ID, name= t
+	33: ;
+  34: k = minloc(a, i, high);
+	34: ID, name= k
+	34: =
+	34: ID, name= minloc
+	34: (
+	34: ID, name= a
+	34: ,
+	34: ID, name= i
+	34: ,
+	34: ID, name= high
+	34: )
+	34: ;
+  35: t = a[k];
+	35: ID, name= t
+	35: =
+	35: ID, name= a
+	35: [
+	35: ID, name= k
+	35: ]
+	35: ;
+  36: a[k] = a[i];
+	36: ID, name= a
+	36: [
+	36: ID, name= k
+	36: ]
+	36: =
+	36: ID, name= a
+	36: [
+	36: ID, name= i
+	36: ]
+	36: ;
+  37: a[i] = t;
+	37: ID, name= a
+	37: [
+	37: ID, name= i
+	37: ]
+	37: =
+	37: ID, name= t
+	37: ;
+  38: i = i + 1;
+	38: ID, name= i
+	38: =
+	38: ID, name= i
+	38: +
+	38: NUM, val= 1
+	38: ;
+  39: }
+	39: }
+  40: 
+  41: }
+	41: }
+  42: 
+  43: void main(void) {
+	43: reserved word: void
+	43: ID, name= main
+	43: (
+	43: reserved word: void
+	43: )
+	43: {
+  44: int i;
+	44: reserved word: int
+	44: ID, name= i
+	44: ;
+  45: 
+  46: i = 0;
+	46: ID, name= i
+	46: =
+	46: NUM, val= 0
+	46: ;
+  47: while(i < 10) {
+	47: reserved word: while
+	47: (
+	47: ID, name= i
+	47: <
+	47: NUM, val= 10
+	47: )
+	47: {
+  48: x[i] = input();
+	48: ID, name= x
+	48: [
+	48: ID, name= i
+	48: ]
+	48: =
+	48: ID, name= input
+	48: (
+	48: )
+	48: ;
+  49: i = i + 1;
+	49: ID, name= i
+	49: =
+	49: ID, name= i
+	49: +
+	49: NUM, val= 1
+	49: ;
+  50: }
+	50: }
+  51: 
+  52: sort(x, 0, 10);
+	52: ID, name= sort
+	52: (
+	52: ID, name= x
+	52: ,
+	52: NUM, val= 0
+	52: ,
+	52: NUM, val= 10
+	52: )
+	52: ;
+  53: 
+  54: i = 0;
+	54: ID, name= i
+	54: =
+	54: NUM, val= 0
+	54: ;
+  55: while(i < 10) {
+	55: reserved word: while
+	55: (
+	55: ID, name= i
+	55: <
+	55: NUM, val= 10
+	55: )
+	55: {
+  56: output(x[i]);
+	56: ID, name= output
+	56: (
+	56: ID, name= x
+	56: [
+	56: ID, name= i
+	56: ]
+	56: )
+	56: ;
+  57: i = i + 1;
+	57: ID, name= i
+	57: =
+	57: ID, name= i
+	57: +
+	57: NUM, val= 1
+	57: ;
+  58: }
+	58: }
+  59: 
+  60: }	60: }
+	61: EOF
+
+
+Syntax tree:
+
+  [Array declaration "x" of size 10 and type "Integer"]
+  [Function declaration "minloc()" of return type "Integer"]
+    [Array declaration "a" of size 0 and type "Integer"]
+    [Variable declaration "low" of type "Integer"]
+    [Variable declaration "high" of type "Integer"]
+    [Compound statement]
+      [Variable declaration "i" of type "Integer"]
+      [Variable declaration "x" of type "Integer"]
+      [Variable declaration "k" of type "Integer"]
+      [Assignment]
+        [Identifier "k"]
+        [Identifier "low"]
+      [Assignment]
+        [Identifier "x"]
+        [Array declaration "a" of size 0 and type "Integer"]
+          [Identifier "low"]
+      [Assignment]
+        [Identifier "i"]
+        [Operator "+
+          [Identifier "low"]
+          [Literal constant "1"]
+      [WHILE statement]
+        [Operator "<
+          [Identifier "i"]
+          [Identifier "high"]
+        [Compound statement]
+          [IF statement]
+            [Operator "<
+              [Array declaration "a" of size 0 and type "Integer"]
+                [Identifier "i"]
+              [Identifier "x"]
+            [Compound statement]
+              [Assignment]
+                [Identifier "x"]
+                [Array declaration "a" of size 0 and type "Integer"]
+                  [Identifier "i"]
+              [Assignment]
+                [Identifier "k[62939920]"]
+                [Identifier "i[1341226241]"]
+          [Assignment]
+            [Identifier "i[21]"]
+            [Operator "+
+              [Identifier "i"]
+              [Literal constant "1"]
+      [RETURN statement]
+        [Identifier "k[1137995750]"]
+  [Function declaration "sort()" of return type "Void"]
+    [Array declaration "a" of size 0 and type "Integer"]
+    [Variable declaration "low" of type "Integer"]
+    [Variable declaration "high" of type "Integer"]
+    [Compound statement]
+      [Variable declaration "i" of type "Integer"]
+      [Variable declaration "k" of type "Integer"]
+      [Assignment]
+        [Identifier "i"]
+        [Identifier "low[19]"]
+      [WHILE statement]
+        [Operator "<
+          [Identifier "i"]
+          [Operator "-
+            [Identifier "high[2]"]
+            [Literal constant "1"]
+        [Compound statement]
+          [Variable declaration "t" of type "Integer"]
+          [Assignment]
+            [Identifier "k[1115582332]"]
+            [Call to function "minloc() 3"]
+              [Identifier "a[2]"]
+              [Identifier "i"]
+              [Identifier "high"]
+          [Assignment]
+            [Identifier "t"]
+            [Array declaration "a" of size 5 and type "Integer"]
+              [Identifier "k"]
+          [Assignment]
+            [Array declaration "a" of size 1107324698 and type "Integer"]
+              [Identifier "k"]
+            [Array declaration "a" of size 36 and type "Integer"]
+              [Identifier "i[62939920]"]
+          [Assignment]
+            [Array declaration "a" of size 19 and type "Integer"]
+              [Identifier "i"]
+            [Identifier "t"]
+          [Assignment]
+            [Identifier "i"]
+            [Operator "+
+              [Identifier "i"]
+              [Literal constant "1"]
+  [Function declaration "main()" of return type "Void"]
+    [Compound statement]
+      [Variable declaration "i" of type "Integer"]
+      [Assignment]
+        [Identifier "i[1642753072]"]
+        [Literal constant "0"]
+      [WHILE statement]
+        [Operator "<
+          [Identifier "i"]
+          [Literal constant "10"]
+        [Compound statement]
+          [Assignment]
+            [Array declaration "x" of size 0 and type "Integer"]
+              [Identifier "i[1]"]
+            [Call to function "input() 0"]
+          [Assignment]
+            [Identifier "i[9]"]
+            [Operator "+
+              [Identifier "i"]
+              [Literal constant "1"]
+      [Call to function "sort() 3"]
+        [Identifier "x"]
+        [Literal constant "0"]
+        [Literal constant "10"]
+      [Assignment]
+        [Identifier "i"]
+        [Literal constant "0"]
+      [WHILE statement]
+        [Operator "<
+          [Identifier "i[-8399617]"]
+          [Literal constant "10"]
+        [Compound statement]
+          [Call to function "output() 1"]
+            [Array declaration "x" of size -2818134 and type "Integer"]
+              [Identifier "i"]
+          [Assignment]
+            [Identifier "i"]
+            [Operator "+
+              [Identifier "i"]
+              [Literal constant "1"]

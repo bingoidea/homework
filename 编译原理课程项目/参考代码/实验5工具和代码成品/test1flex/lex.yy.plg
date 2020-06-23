@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: lex.yy - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\yyd\AppData\Local\Temp\RSP9BB.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/lex.yy.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\yyd\Desktop\สตั้5\test1flex\lex.yy.c"
+]
+Creating command line "cl.exe @C:\Users\yyd\AppData\Local\Temp\RSP9BB.tmp" 
+<h3>Output Window</h3>
+Compiling...
+lex.yy.c
+lex.yy.c(1388) : warning C4013: 'exit' undefined; assuming extern returning int
+lex.yy.c(1435) : warning C4013: 'malloc' undefined; assuming extern returning int
+lex.yy.c(1453) : warning C4013: 'realloc' undefined; assuming extern returning int
+lex.yy.c(1463) : warning C4013: 'free' undefined; assuming extern returning int
+
+
+
+<h3>Results</h3>
+lex.yy.obj - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
